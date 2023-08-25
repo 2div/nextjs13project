@@ -3,7 +3,7 @@ import getDomain from "../lib/getDomain"
 async function getData() {
     // 1 endpoint - API?
     const domain = getDomain()
-    const endpoint =`${domain}/api/posts` // -> third party api request
+    const endpoint =`localhost:3000/api/posts` // -> third party api request
     const res = await fetch(endpoint) //http GET
 
     if (!res.ok){
